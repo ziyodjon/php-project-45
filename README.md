@@ -19,4 +19,3 @@ $ cd php-project-45
 $ make install
 ```
 ## Asciinema recordings:
-https://asciinema.org/a/F9BwXsXuNx1IEolYYtoB2mBbS
