@@ -8,5 +8,9 @@ brain-calc:
 	php bin/brain-calc
 brain-gcd:
 	php bin/brain-gcd
+brain-progression:
+	php bin/brain-progress
+brain-prime:
+	php bin/brain-prime
 lint:
 	composer exec --verbose phpcs -- --standard=PSR12 src bin
