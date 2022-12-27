@@ -20,3 +20,4 @@ $ make install
 ```
 ## Asciinema recordings:
 [Brain-even](https://asciinema.org/a/aB0Rfpx984vgXxaKr7BlMSGUW)
+[Brain-calc](https://asciinema.org/a/zqKMHzAmtucm4TkOSf7lAgICM)
