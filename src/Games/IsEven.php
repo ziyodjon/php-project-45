@@ -3,24 +3,26 @@
 namespace BrainGames\Cli;
 
 use function BrainGames\Cli\welcome;
-use function cli\line;
-use function cli\prompt;
 
-function even()
+function startEven()
 {
     $name = welcome();
+    isEven($name);
+}
+
+function isEven(string $name)
+{
+    $finalAssocArray = [];
+
     for ($i = 0; $i < 3; $i++) {
-        $numb = rand(1, 100);
-        $answer = prompt("Question: $numb\nYour answer");
-        if ($numb % 2 == 0 && $answer === 'yes') {
-            line("Correct!!!");
-        } elseif ($numb % 2 == 1 && $answer === 'no') {
-            line("Correct!!!");
+        $number = rand(1, 100);
+        if ($number % 2 == 0) {
+            $finalAssocArray[$number] = 'yes';
         } else {
-            $correctAnswer = $answer === 'yes' ? 'no' : 'yes' ;
-            line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'");
-            return;
+            $finalAssocArray[$number] = 'no';
         }
     }
-    line("Congratulations, {$name}");
+
+    $task = 'Answer "yes" if the number is even, otherwise answer "no".';
+    mainEngine($finalAssocArray, $name, $task);
 }

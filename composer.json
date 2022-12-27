@@ -4,6 +4,7 @@
     "autoload": {
         "files": [
             "src/Cli.php",
+            "src/Engine.php",
             "src/Games/IsEven.php"
         ]
     },
