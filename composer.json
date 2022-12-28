@@ -20,7 +20,7 @@
        "bin/brain-even",
        "bin/brain-calc",
        "bin/brain-gcd",
-       "bin/brain-progress",
+       "bin/brain-progression",
        "bin/brain-prime"
     ],
     "require-dev": {
